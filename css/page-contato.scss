@@ -1,0 +1,485 @@
+@media (min-width: 1024px) {
+  .page-contato {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    z-index: 3;
+    margin-top: -167px;
+    background-image: url(../imagens/textura-hero-final.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .titulo-contato {
+    margin-top: 60px;
+    max-height: 100px;
+    grid-row-start: 1;
+    grid-column-start: 1;
+    grid-column-end: 4;
+  }
+
+  .titulo-contato h2 {
+    @include area-titles;
+  }
+
+  /* card-contato */
+
+  .container-contato {
+    width: auto;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    grid-column-start: 1;
+    grid-column-end: 13;
+  }
+
+  .container-contato .card-contato {
+    position: relative;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+
+  .container-contato .card-contato .icon {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #f00;
+    transition: 0.7s;
+    z-index: 1;
+  }
+
+  .container-contato .card-contato:nth-child(1) .icon {
+    background: #e07768;
+  }
+
+  .container-contato .card-contato:nth-child(2) .icon {
+    background: #6eadd4;
+  }
+
+  .container-contato .card-contato:nth-child(3) .icon {
+    background: #4aada9;
+  }
+
+  .container-contato .card-contato .icon .fa {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 80px;
+    transition: 0.7s;
+    color: #fff;
+  }
+
+  .icon i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 80px;
+    transition: 0.7s;
+    color: #fff;
+  }
+
+  .container-contato .card-contato .face {
+    width: 300px;
+    height: 200px;
+    transition: 0.5s;
+  }
+
+  .container-contato .card-contato .face.face1 {
+    position: relative;
+    background: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    transform: translateY(100px);
+  }
+
+  .container-contato .card-contato:hover .face.face1 {
+    background: #ff0057;
+    transform: translateY(0px);
+  }
+
+  .container-contato .card-contato .face.face1 .content {
+    opacity: 1;
+    transition: 0.5s;
+  }
+
+  .container-contato .card-contato:hover .face.face1 .content {
+    opacity: 1;
+  }
+
+  .container-contato .card-contato .face.face1 .content i {
+    max-width: 100px;
+  }
+
+  .container-contato .card-contato .face.face2 {
+    position: relative;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+    box-shadow: 0 20px 50px $primarycolor;
+    transform: translateY(-100px);
+  }
+
+  .container-contato .card-contato:hover .face.face2 {
+    transform: translateY(0);
+  }
+
+  .container-contato .card-contato .face.face2 .content p {
+    font-family: gillSans;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    color: #414141;
+  }
+
+  .container-contato .card-contato .face.face2 .content h3 {
+    font-family: gillSans;
+    margin: 0 0 10px 0;
+    padding: 0;
+    color: #fff;
+    font-size: 24px;
+    text-align: center;
+    color: #414141;
+  }
+
+  .container-contato a {
+    text-decoration: none;
+    color: #414141;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .page-contato {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    z-index: 3;
+    margin-top: -167px;
+    background-image: url(../imagens/textura-hero-final.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .titulo-contato {
+    margin-top: 60px;
+    max-height: 100px;
+    grid-row-start: 1;
+    grid-column-start: 1;
+    grid-column-end: 6;
+  }
+
+  .titulo-contato h2 {
+    @include area-titles;
+  }
+
+  /* card-contato */
+
+  .container-contato {
+    width: auto;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    grid-column-start: 1;
+    grid-column-end: 7;
+  }
+
+  .container-contato .card-contato {
+    position: relative;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+
+  .container-contato .card-contato .icon {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #f00;
+    transition: 0.7s;
+    z-index: 1;
+  }
+
+  .container-contato .card-contato:nth-child(1) .icon {
+    background: #e07768;
+  }
+
+  .container-contato .card-contato:nth-child(2) .icon {
+    background: #6eadd4;
+  }
+
+  .container-contato .card-contato:nth-child(3) .icon {
+    background: #4aada9;
+  }
+
+  .container-contato .card-contato .icon .fa {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 80px;
+    transition: 0.7s;
+    color: #fff;
+  }
+
+  .icon i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 80px;
+    transition: 0.7s;
+    color: #fff;
+  }
+
+  .container-contato .card-contato .face {
+    width: 170px;
+    height: 200px;
+    transition: 0.5s;
+  }
+
+  .container-contato .card-contato .face.face1 {
+    position: relative;
+    background: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    transform: translateY(100px);
+  }
+
+  .container-contato .card-contato:active .face.face1 {
+    background: #ff0057;
+    transform: translateY(0px);
+  }
+
+  .container-contato .card-contato .face.face1 .content {
+    opacity: 1;
+    transition: 0.5s;
+  }
+
+  .container-contato .card-contato:active .face.face1 .content {
+    opacity: 1;
+  }
+
+  .container-contato .card-contato .face.face1 .content i {
+    max-width: 100px;
+  }
+
+  .container-contato .card-contato .face.face2 {
+    position: relative;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+    box-shadow: 0 20px 50px $primarycolor;
+    transform: translateY(-100px);
+  }
+
+  .container-contato .card-contato:active .face.face2 {
+    transform: translateY(0);
+  }
+
+  .container-contato .card-contato .face.face2 .content p {
+    font-family: gillSans;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    color: #414141;
+  }
+
+  .container-contato .card-contato .face.face2 .content h3 {
+    font-family: gillSans;
+    margin: 0 0 10px 0;
+    padding: 0;
+    color: #fff;
+    font-size: 24px;
+    text-align: center;
+    color: #414141;
+  }
+
+  .container-contato a {
+    text-decoration: none;
+    color: #414141;
+  }
+}
+
+@media (min-width: 100px) and (max-width: 767px) {
+  .page-contato {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    z-index: 3;
+    margin-top: -167px;
+    background-image: url(../imagens/textura-hero-final.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .titulo-contato {
+    margin-top: 60px;
+    max-height: 100px;
+    grid-row-start: 1;
+    grid-column-start: 1;
+    grid-column-end: 5;
+  }
+
+  .titulo-contato h2 {
+    @include area-titles;
+  }
+
+  /* card-contato */
+
+  .container-contato {
+    width: auto;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 2.5rem;
+    grid-column-start: 1;
+    grid-column-end: 5;
+  }
+
+  .container-contato .card-contato {
+    position: relative;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+
+  .container-contato .card-contato .icon {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #f00;
+    transition: 0.7s;
+    z-index: 1;
+  }
+
+  .container-contato .card-contato:nth-child(1) .icon {
+    background: #e07768;
+  }
+
+  .container-contato .card-contato:nth-child(2) .icon {
+    background: #6eadd4;
+  }
+
+  .container-contato .card-contato:nth-child(3) .icon {
+    background: #4aada9;
+  }
+
+  .container-contato .card-contato .icon .fa {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 40px;
+    transition: 0.7s;
+    color: #fff;
+  }
+
+  .icon i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 40px;
+    transition: 0.7s;
+    color: #fff;
+  }
+
+  .container-contato .card-contato .face {
+    width: 170px;
+    height: 140px;
+    transition: 0.5s;
+  }
+
+  .container-contato .card-contato .face.face1 {
+    position: relative;
+    background: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    transform: translateY(100px);
+  }
+
+  .container-contato .card-contato:active .face.face1 {
+    background: #ff0057;
+    transform: translateY(0px);
+  }
+
+  .container-contato .card-contato .face.face1 .content {
+    opacity: 1;
+    transition: 0.5s;
+  }
+
+  .container-contato .card-contato:active .face.face1 .content {
+    opacity: 1;
+  }
+
+  .container-contato .card-contato .face.face1 .content i {
+    max-width: 100px;
+  }
+
+  .container-contato .card-contato .face.face2 {
+    position: relative;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+    box-shadow: 0 20px 50px $primarycolor;
+    transform: translateY(-40px);
+  }
+
+  .container-contato .card-contato:active .face.face2 {
+    transform: translateY(0);
+  }
+
+  .container-contato .card-contato .face.face2 .content p {
+    
+    font-family: gillSans;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+    color: #414141;
+  }
+
+  .container-contato .card-contato .face.face2 .content h3 {
+    font-family: gillSans;
+    margin: 0 0 10px 0;
+    padding: 0;
+    color: #fff;
+    font-size: 12pt;
+    text-align: center;
+    color: #414141;
+  }
+
+  .container-contato a {
+    text-decoration: none;
+    color: #414141;
+  }
+}

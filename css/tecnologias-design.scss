@@ -1,0 +1,142 @@
+@media (min-width: 1024px) {
+  .page-tecnologias-design {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background-image: url(../imagens/fundo-page-tecnologias-usadas-design.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 1;
+    height: 650px;
+    top: -165px;
+  }
+
+  .titulo-tecnologia-design {
+    @include tags-fundo;
+    margin-top: 20px;
+    color: $primarycolor;
+    grid-column-start: 1;
+    grid-column-end: 13;
+    height: 83px;
+  }
+
+  .titulo-tecnologia-design i {
+    @include tags-fundo;
+    margin-top: 20px;
+    color: $primarycolor;
+    grid-column-start: 12;
+    grid-column-end: 13;
+    grid-row: 4;
+    height: 83px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 62pt;
+  }
+
+  .page-tecnologias-design .grid-tec i {
+    color: $primarycolor;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 62pt;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .page-tecnologias-design {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background-image: url(../imagens/fundo-page-tecnologias-usadas-design.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 1;
+    height: 650px;
+    top:  -180px;
+  }
+
+  .titulo-tecnologia-design {
+    @include tags-fundo;
+    margin-top: 20px;
+    font-size: 30pt;
+    color: $primarycolor;
+    grid-column-start: 1;
+    grid-column-end: 6;
+    height: 83px;
+  }
+
+  .titulo-tecnologia-design i {
+    @include tags-fundo;
+    margin-top: 20px;
+    color: $primarycolor;
+    grid-column-start: 12;
+    grid-column-end: 13;
+    grid-row: 4;
+    height: 83px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 52pt;
+  }
+
+  .page-tecnologias-design .grid-tec i {
+    color: $primarycolor;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 52pt;
+  }
+}
+
+@media (min-width: 100px) and (max-width: 767px) {
+  .page-tecnologias-design,
+  .grid-tec {
+    grid-template-rows: 220px 180px 90px;
+  }
+
+  .page-tecnologias-design {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background-image: url(../imagens/fundo-page-tecnologias-usadas-design.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 1;
+    height: 650px;
+    top: -165px;
+  }
+
+  .titulo-tecnologia-design {
+    @include tags-fundo4c;
+    margin-top: 80px;
+    color: $primarycolor;
+    font-size: 18pt;
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    height: 83px;
+  }
+
+  .titulo-tecnologia-design i {
+    @include tags-fundo;
+    margin-top: 20px;
+    color: $primarycolor;
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row: 4;
+    height: 83px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 32pt;
+  }
+
+  .page-tecnologias-design .grid-tec i {
+    color: $primarycolor;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 32pt;
+  }
+}

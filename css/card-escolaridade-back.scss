@@ -1,0 +1,247 @@
+@media (min-width: 1024px){
+
+  img {
+    max-width: 100%;
+  }
+  
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+  }
+  
+  .card-back {
+    width: 237px;
+    max-width: 237px;
+    height: 332px;
+    position: relative;
+    background: #333;
+    border-radius: 20px;
+    padding: 2rem;
+    color: $whitecolor;
+    box-shadow: 0 0.25rem 0.25rem rgba(0, 0, 0, 0.2), 0 0 1rem rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    &__image-container {
+      margin: -2rem -2rem 1rem -2rem;
+      height: 190px;
+      padding-bottom: 5px;
+      background-color: white;
+    }
+    &__line {
+      opacity: 0;
+      animation: LineFadeIn 2s 0.8s forwards ease-in;
+    }
+    &__image {
+      opacity: 0;
+      animation: ImageFadeIn 2s 1.4s forwards;
+      height: 150px;
+    }
+    &__title {
+      font-family: attentic;
+      font-size: 18pt;
+      color: $whitecolor;
+      margin-top: 0;
+      font-weight: 800;
+      letter-spacing: 0.1em;
+    }
+    &__content {
+      font-family: caviarDreams;
+      font-size: 10pt;
+      letter-spacing: 0.02em;
+      margin-top: -3.7rem;
+      opacity: 0;
+      animation: ContentFadeIn 2s 1.6s forwards;
+    }
+    &__content a {
+      color: $whitecolor;
+      text-decoration: none;
+    }
+    &__content a:hover {
+      color: $primarycolor;
+      text-decoration: underline;
+    }
+    &__content li {
+      margin: 5px;
+    }
+    &__svg {
+      position: absolute;
+      left: 0;
+      top: 45px;
+    }
+  }
+  
+  
+}
+
+
+@media (min-width: 768px) and (max-width: 1023px) {
+
+  .back {
+    width: 200px;
+    max-width: 200px;
+    height: 300px;
+  }
+
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+    width: 100%;
+    height: 100%;
+  }
+  .card-back {
+    background: #333;
+    
+    border-radius: 20px;
+    width: 200px;
+    max-width: 200px;
+    height: 300px;
+    color: $whitecolor;
+    box-shadow: 0 0.25rem 0.25rem rgba(0, 0, 0, 0.2),
+      0 0 1rem rgba(0, 0, 0, 0.2);
+
+    &__image-container {
+      border-radius: 20px;
+      max-width: 200px;
+      margin: 0;
+      width: 100%;
+      height: 20ch;
+      padding-bottom: 5px;
+      background-color: white;
+    }
+    &__line {
+      opacity: 0;
+      animation: LineFadeIn 2s 0.8s forwards ease-in;
+    }
+    &__image {
+      border-radius: 20px;
+      opacity: 0;
+      animation: ImageFadeIn 2s 1.4s forwards;
+      width: 100%;
+      height: 100%;
+    }
+    &__title {
+      padding-left: .2rem;
+      font-family: attentic;
+      font-size: 16pt;
+      color: $whitecolor;
+      margin-top: 2.5rem;
+      font-weight: 800;
+      letter-spacing: 0.1em;
+      margin-bottom: 5px;
+    }
+    &__content {
+      padding-left: .5rem;
+      font-family: caviarDreams;
+      font-size: 8pt;
+      letter-spacing: 0.02em;
+      margin-top: -3.7rem;
+      opacity: 0;
+      animation: ContentFadeIn 2s 1.6s forwards;
+    }
+    &__content a {
+      color: $whitecolor;
+      text-decoration: none;
+    }
+    &__content a:hover {
+      color: $primarycolor;
+      text-decoration: underline;
+    }
+    &__content li {
+      
+      list-style: none;
+    }&__content ul {
+      padding: 0;
+    }
+    &__svg {
+      position: absolute;
+      left: 0;
+      top: 45px;
+    }
+  }
+}
+
+@media (min-width: 100px) and (max-width: 767px) {
+  .back {
+    width: 200px;
+    height: 300px;
+  }
+
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+    width: 100%;
+    height: 100%;
+  }
+  .card-back {
+    background: #333;
+    width: 100%;
+    border-radius: 20px;
+    height: 300px;
+    color: $whitecolor;
+    box-shadow: 0 0.25rem 0.25rem rgba(0, 0, 0, 0.2),
+      0 0 1rem rgba(0, 0, 0, 0.2);
+
+    &__image-container {
+      margin: 0;
+      width: 200px;
+      height: 148px;
+      padding-bottom: 5px;
+      background-color: white;
+      border-radius: 20px 20px 0px 0px ;
+    }
+    &__line {
+      color: $primarycolor;
+      opacity: 0;
+      animation: LineFadeIn 2s 0.8s forwards ease-in;
+    }
+    &__image {
+      opacity: 0;
+      border-radius: 20px;
+      animation: ImageFadeIn 2s 1.4s forwards;
+      width: 200px;
+      height: 138px;
+    }
+    &__title {
+      font-family: attentic;
+      font-size: 16pt;
+      color: $whitecolor;
+      margin-top: 3rem;
+      font-weight: 800;
+      letter-spacing: 0.1em;
+      margin-bottom: 15px;
+    }
+    &__content {
+      padding: 0px 0px 0px 20px;
+      font-family: caviarDreams;
+      font-size: 10pt;
+      letter-spacing: 0.02em;
+      margin-top: -3.7rem;
+      opacity: 0;
+      animation: ContentFadeIn 2s 1.6s forwards;
+    }
+    &__content a {
+      color: $whitecolor;
+      text-decoration: none;
+    }
+    &__content a:hover {
+      color: $primarycolor;
+      text-decoration: underline;
+    }
+    &__content li {
+      
+      list-style: none;
+    }&__content ul {
+      padding: 0;
+    }
+    &__svg {
+      position: absolute;
+      left: 0;
+      top: 45px;
+    }
+  }
+}

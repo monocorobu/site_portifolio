@@ -1,0 +1,404 @@
+@media (min-width: 1024px) {
+
+    .page-programacao {
+        display: flex;
+        justify-content: center;
+        width: 100vw;
+    }
+    
+    .page-programacao {
+        display: flex;
+        justify-content: center;
+        position: relative;
+        margin-top: -260px;
+        background-image: url('../imagens/fundo-programação.png');
+        height: 1500px;
+        width: 100%;
+        background-size: cover;
+        z-index: 0;
+    }
+    
+    .programacao-fundo {
+        position: absolute;
+        margin-top: 0px;
+        height: 638px;
+        width: 100%;
+    }
+    
+    
+    .page-programacao .container-grid {
+        position: relative;
+        top: calc(100% - 80%);
+    }
+    
+    .titulo-programacao {
+        margin-top: 60px;
+        grid-row-start: 1;
+        grid-column-start: 1;
+        grid-column-end: 4;
+        max-height: 100px
+    }
+    
+    .titulo-programacao h2 {
+        @include area-titles;
+    }
+    
+    @import 'card-programacao';
+    
+    .vermais {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        grid-column-start: 1;
+        grid-column-end: 13;
+    }
+    
+    .vermais a {
+        border: 4px solid $whitecolor;
+        color: $whitecolor;
+        display: inline-block;
+        font-size: 18px;
+        font-weight: bold;
+        line-height: 24px;
+        margin: auto;
+        padding: 12px 32px 12px 82px;
+        position: relative;
+        text-decoration: none;
+    }
+    
+    .vermais a .label,
+    .vermais a .icon-arrow {
+        backface-visibility: hidden;
+        transform: translateZ(0);
+        perspective: 1000;
+    }
+    
+    .vermais a .label {
+        display: inline-block;
+        transition: transform .5s cubic-bezier(0.86, 0, 0.07, 1);
+        font-family: cocogoose;
+    }
+    
+    .vermais a .icon-arrow {
+        fill: $whitecolor;
+        height: 15px;
+        top: 17px;
+        transition: transform .5s cubic-bezier(0.86, 0, 0.07, 1), opacity .4s cubic-bezier(0.86, 0, 0.07, 1);
+        width: 35px;
+    }
+    
+    .vermais a .icon-arrow.before {
+        left: 32px;
+        margin-right: 15px;
+        position: absolute;
+        transform-origin: left center;
+    }
+    
+    .vermais a .icon-arrow.after {
+        margin-left: 15px;
+        opacity: 0;
+        position: absolute;
+        right: 32px;
+        transform: translateX(75%) scaleX(0.1);
+        transform-origin: right center;
+    }
+    
+    .vermais a:hover,.vermais a:hover .label {
+        transform: translateX(-52px);
+    }
+    
+    .vermais a:hover,.vermais a:hover .icon-arrow.before {
+        opacity: 0;
+        transform: translateX(-75%) scaleX(0.1);
+    }
+    
+    .vermais a:hover,.vermais a:hover .icon-arrow.after {
+        opacity: 1;
+        transform: translateX(0) scaleX(1);
+    }
+    
+    .vermais a:active {
+        border-color: #FD6154;
+        color: #FD6154;
+    }
+    
+    .vermais a:active .icon-arrow {
+        fill: #FD6154;
+    }
+
+}
+
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    .page-programacao {
+        display: flex;
+        justify-content: center;
+        width: 100vw;
+    }
+    
+    .page-programacao {
+        display: flex;
+        justify-content: center;
+        position: relative;
+        margin-top: -260px;
+        background-image: url('../imagens/fundo-programação.png');
+        background-attachment: fixed;
+        height: 2100px;
+        width: 100%;
+        background-size: cover;
+        z-index: 0;
+    }
+    .tree-rowsprog {
+        grid-template-rows: 119px auto auto;
+      }
+    
+    .programacao-fundo {
+        position: absolute;
+        margin-top: 0px;
+        height: 638px;
+        width: 100%;
+    }
+    
+    
+    .page-programacao .container-grid {
+        position: relative;
+        top: calc(100% - 80%);
+    }
+    
+    .titulo-programacao {
+        margin-top: 60px;
+        margin-left: 6rem;
+        grid-row-start: 1;
+        grid-column-start: 1;
+        grid-column-end: 4;
+        max-height: 20px
+    }
+    
+    .titulo-programacao h2 {
+        @include area-titles;
+    }
+    
+    @import 'card-programacao';
+    .vermais {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        grid-column-start: 1;
+        grid-column-end: 6;
+    }
+    
+    .vermais a {
+        border: 4px solid $whitecolor;
+        color: $whitecolor;
+        display: inline-block;
+        font-size: 18px;
+        font-weight: bold;
+        line-height: 24px;
+        margin: auto;
+        padding: 12px 32px 12px 82px;
+        position: relative;
+        text-decoration: none;
+    }
+    
+    .vermais a .label,
+    .vermais a .icon-arrow {
+        backface-visibility: hidden;
+        transform: translateZ(0);
+        perspective: 1000;
+    }
+    
+    .vermais a .label {
+        display: inline-block;
+        transition: transform .5s cubic-bezier(0.86, 0, 0.07, 1);
+        font-family: cocogoose;
+    }
+    
+    .vermais a .icon-arrow {
+        fill: $whitecolor;
+        height: 15px;
+        top: 17px;
+        transition: transform .5s cubic-bezier(0.86, 0, 0.07, 1), opacity .4s cubic-bezier(0.86, 0, 0.07, 1);
+        width: 35px;
+    }
+    
+    .vermais a .icon-arrow.before {
+        left: 32px;
+        margin-right: 15px;
+        position: absolute;
+        transform-origin: left center;
+    }
+    
+    .vermais a .icon-arrow.after {
+        margin-left: 15px;
+        opacity: 0;
+        position: absolute;
+        right: 32px;
+        transform: translateX(75%) scaleX(0.1);
+        transform-origin: right center;
+    }
+    
+    .vermais a:hover,.vermais a:hover .label {
+        transform: translateX(-52px);
+    }
+    
+    .vermais a:hover,.vermais a:hover .icon-arrow.before {
+        opacity: 0;
+        transform: translateX(-75%) scaleX(0.1);
+    }
+    
+    .vermais a:hover,.vermais a:hover .icon-arrow.after {
+        opacity: 1;
+        transform: translateX(0) scaleX(1);
+    }
+    
+    .vermais a:active {
+        border-color: #FD6154;
+        color: #FD6154;
+    }
+    
+    .vermais a:active .icon-arrow {
+        fill: #FD6154;
+    }
+
+
+}
+
+
+@media (min-width: 100px) and (max-width: 767px) {
+    .page-programacao {
+        display: flex;
+        justify-content: center;
+        width: 100vw;
+    }
+    
+    .page-programacao {
+        display: flex;
+        justify-content: center;
+        position: relative;
+        margin-top: -260px;
+        background-image: url('../imagens/fundo-programação.png');
+        background-attachment: fixed;
+        height: 3000px;
+        width: 100%;
+        background-size: cover;
+        z-index: 0;
+    }
+    .tree-rowsprog {
+        grid-template-rows: 119px auto auto;
+      }
+    
+    
+    
+    .page-programacao .container-grid {
+        grid-template-rows: 45px auto;
+        position: relative;
+        top: 35ch;
+    }
+    
+    .titulo-programacao {
+        margin-top: 60px;
+        margin-bottom: 20rem;
+        grid-column-start: 1;
+        grid-column-end: 4;
+        grid-row-start: 1;
+        max-height: 100px
+    }
+    
+    .titulo-programacao h2 {
+        @include area-titles4c;
+    }
+    
+    @import 'card-programacao';
+    
+    .card1prog{
+        margin-top: 5rem;
+        grid-column-start: 1;
+        grid-column-end: 5;
+        grid-row-start:2 ;
+        height: auto;
+    }
+    
+    
+    .vermais {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        grid-column-start: 1;
+        grid-column-end: 6;
+    }
+    
+    .vermais a {
+        border: 4px solid $whitecolor;
+        color: $whitecolor;
+        display: inline-block;
+        font-size: 18px;
+        font-weight: bold;
+        line-height: 24px;
+        margin: auto;
+        padding: 12px 32px 12px 82px;
+        position: relative;
+        text-decoration: none;
+    }
+    
+    .vermais a .label,
+    .vermais a .icon-arrow {
+        backface-visibility: hidden;
+        transform: translateZ(0);
+        perspective: 1000;
+    }
+    
+    .vermais a .label {
+        display: inline-block;
+        transition: transform .5s cubic-bezier(0.86, 0, 0.07, 1);
+        font-family: cocogoose;
+    }
+    
+    .vermais a .icon-arrow {
+        fill: $whitecolor;
+        height: 15px;
+        top: 17px;
+        transition: transform .5s cubic-bezier(0.86, 0, 0.07, 1), opacity .4s cubic-bezier(0.86, 0, 0.07, 1);
+        width: 35px;
+    }
+    
+    .vermais a .icon-arrow.before {
+        left: 32px;
+        margin-right: 15px;
+        position: absolute;
+        transform-origin: left center;
+    }
+    
+    .vermais a .icon-arrow.after {
+        margin-left: 15px;
+        opacity: 0;
+        position: absolute;
+        right: 32px;
+        transform: translateX(75%) scaleX(0.1);
+        transform-origin: right center;
+    }
+    
+    .vermais a:hover,.vermais a:hover .label {
+        transform: translateX(-52px);
+    }
+    
+    .vermais a:hover,.vermais a:hover .icon-arrow.before {
+        opacity: 0;
+        transform: translateX(-75%) scaleX(0.1);
+    }
+    
+    .vermais a:hover,.vermais a:hover .icon-arrow.after {
+        opacity: 1;
+        transform: translateX(0) scaleX(1);
+    }
+    
+    .vermais a:active {
+        border-color: #FD6154;
+        color: #FD6154;
+    }
+    
+    .vermais a:active .icon-arrow {
+        fill: #FD6154;
+    }
+
+
+}

@@ -1,0 +1,390 @@
+@media (min-width: 1024px) {
+  .page-oquefaco {
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+  }
+
+  .page-oquefaco {
+    margin-top: 0px;
+    height: 638px;
+    width: 100%;
+    background: rgb(75, 75, 74);
+    background: linear-gradient(
+      173deg,
+      rgba(75, 75, 74, 1) 41%,
+      rgba(252, 252, 253, 1) 96%
+    );
+  }
+
+  .titulo-oquefaco {
+    margin-top: 60px;
+    grid-row-start: 1;
+    grid-column-start: 1;
+    grid-column-end: 4;
+  }
+
+  .titulo-oquefaco h2 {
+    @include area-titles;
+  }
+
+  //card
+  .card-vivencia {
+    width: 320px;
+    height: 410px;
+    background: transparent;
+    border-radius: 30px;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.25s ease;
+    backface-visibility: hidden;
+    margin-top: 150px;
+  }
+
+  .prog {
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 1;
+  }
+
+  .design {
+    grid-column-start: 5;
+    grid-column-end: 9;
+    grid-row-start: 1;
+  }
+
+  .hobs {
+    grid-column-start: 9;
+    grid-column-end: 12;
+    grid-row-start: 1;
+  }
+
+  .card-vivencia:hover {
+    transform: scale(0.9);
+  }
+
+  .card-vivencia:hover:after {
+    height: 280px;
+  }
+
+  .card-vivencia:hover .cont-text p {
+    margin-bottom: 0px;
+    opacity: 1;
+  }
+
+  .card-vivencia:hover img {
+    transform: scale(1.25);
+  }
+
+  .card-vivencia:after {
+    width: 100%;
+    content: "";
+    left: 0px;
+    bottom: 0px;
+    height: 150px;
+    position: absolute;
+    z-index: 20;
+    transition: all 0.25 ease;
+  }
+
+  .card-vivencia img {
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    transition: all 0.25s ease;
+  }
+
+  .card-vivencia .cont-text {
+    font-family: caviarDreams;
+    z-index: 30;
+    position: absolute;
+    bottom: 0;
+    color: $whitecolor;
+    padding: 20px;
+    padding-bottom: 30px;
+  }
+
+  .card-vivencia .cont-text p {
+    font-size: 11pt;
+    opacity: 0;
+    margin-bottom: -340px;
+    transition: all 0.25s ease;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-direction: column;
+  }
+
+  .card-vivencia .cont-text h2 {
+    font-family: gillSans;
+    font-size: 37pt;
+    margin-bottom: 200px;
+  }
+
+  .card-vivencia .cont-text p button {
+    padding: 7px 17px;
+    border-radius: 12px;
+    background: transparent;
+    border: 2px solid $whitecolor;
+    color: $whitecolor;
+    margin-top: 10px;
+    margin-left: auto;
+    cursor: pointer;
+    transition: all 0.25s ease;
+    font-family: caviarDreams;
+    font-size: 0.75rem;
+    outline: none;
+  }
+
+  .card-vivencia .cont-text p button:hover {
+    background: #fff;
+    color: #000;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .hobsdiv {
+    display: none; /* oculta a div */
+  }
+
+  .page-oquefaco {
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+  }
+
+  .page-oquefaco {
+    margin-top: 0px;
+    height: 638px;
+    width: 100%;
+    background: rgb(75, 75, 74);
+    background: linear-gradient(
+      173deg,
+      rgba(75, 75, 74, 1) 41%,
+      rgba(252, 252, 253, 1) 96%
+    );
+  }
+
+  .titulo-oquefaco {
+    margin-top: 60px;
+    grid-row-start: 1;
+    grid-column-start: 1;
+    grid-column-end: 4;
+  }
+
+  .titulo-oquefaco h2 {
+    @include area-titles;
+  }
+  //card
+  .card-vivencia {
+    width: 260px;
+    height: 330px;
+    background: transparent;
+    border-radius: 30px;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.25s ease;
+    backface-visibility: hidden;
+    margin-top: 150px;
+  }
+
+  .prog {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 1;
+  }
+  .design {
+    grid-column-start: 4;
+    grid-column-end: 7;
+    grid-row-start: 1;
+    justify-self: end;
+  }
+  
+  .card-vivencia .cont-text {
+    font-family: caviarDreams;
+    z-index: 30;
+    position: absolute;
+    bottom: 0;
+    color: $whitecolor;
+    padding: 20px;
+    padding-bottom: 0px;
+  }
+  .card-vivencia .cont-text h2 {
+    font-family: gillSans;
+    font-size: 34pt;
+    margin-bottom: 8rem;
+  }
+
+  .card-vivencia .cont-text p {
+    font-size: 11pt;
+    opacity: 1;
+    margin-bottom: 20px;
+    transition: all 0.25s ease;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-direction: column;
+  }
+
+  .card-vivencia img {
+    transform: scale(1.25);
+  }
+
+  .card-vivencia img {
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    transition: all 0.25s ease;
+  }
+
+  .card-vivencia .cont-text p button {
+    padding: 7px 17px;
+    border-radius: 12px;
+    background: transparent;
+    border: 2px solid $whitecolor;
+    color: $whitecolor;
+    margin-top: 10px;
+    margin-left: auto;
+    cursor: pointer;
+    transition: all 0.25s ease;
+    font-family: caviarDreams;
+    font-size: 0.75rem;
+    outline: none;
+  }
+
+  .card-vivencia .cont-text p button:hover {
+    background: #fff;
+    color: #000;
+  }
+}
+
+@media (min-width: 100px) and (max-width: 767px) {
+  .page-oquefaco .two-rows{
+    grid-template-rows: 45px 400px 400px;
+  }
+  
+
+  .page-oquefaco {
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+  }
+
+  .page-oquefaco {
+    margin-top: 0px;
+    height: 1350px;
+    width: 100%;
+    background: rgb(75, 75, 74);
+    background: linear-gradient(
+      173deg,
+      rgba(75, 75, 74, 1) 41%,
+      rgba(252, 252, 253, 1) 96%
+    );
+  }
+
+  .titulo-oquefaco {
+    margin-top: 25px;
+    grid-row-start: 1;
+    grid-column-start: 1;
+    grid-column-end: 5;
+  }
+
+  .titulo-oquefaco h2 {
+    @include area-titles4c;
+  }
+  //card
+  .card-vivencia {
+    width: 260px;
+    height: 330px;
+    background: transparent;
+    border-radius: 30px;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.25s ease;
+    backface-visibility: hidden;
+    margin-top: 50px;
+  }
+
+  .prog {
+    grid-column-start: 1;
+    grid-column-end: 5;
+    height: 400px;
+  }
+
+  .design {
+    grid-column-start: 1;
+    grid-column-end: 5;
+    height: 400px;
+  }
+
+  .hobsdiv{
+    grid-column-start: 1;
+    grid-column-end: 5;
+    height: 400px;
+  }
+
+  .card-vivencia .cont-text {
+    font-family: caviarDreams;
+    z-index: 30;
+    position: absolute;
+    bottom: 0;
+    color: $whitecolor;
+    padding: 20px;
+    padding-bottom: 0px;
+  }
+
+  .card-vivencia .cont-text h2 {
+    font-family: gillSans;
+    font-size: 34pt;
+    margin-bottom: 8rem;
+  }
+
+  .card-vivencia .cont-text p {
+    font-size: 11pt;
+    opacity: 1;
+    margin-bottom: 20px;
+    transition: all 0.25s ease;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-direction: column;
+  }
+
+  .card-vivencia img {
+    transform: scale(1.25);
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    transition: all 0.25s ease;
+    filter: brightness(60%);
+  }
+
+  .card-vivencia .cont-text p button {
+    padding: 7px 17px;
+    border-radius: 12px;
+    background: transparent;
+    border: 2px solid $whitecolor;
+    color: $whitecolor;
+    margin-top: 10px;
+    margin-left: auto;
+    cursor: pointer;
+    transition: all 0.25s ease;
+    font-family: caviarDreams;
+    font-size: 0.75rem;
+    outline: none;
+  }
+
+  
+}

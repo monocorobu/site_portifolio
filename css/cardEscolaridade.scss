@@ -1,0 +1,444 @@
+@media (min-width: 1024px) {
+  .cardsEscolaridade1,
+  .cardsEscolaridade2,
+  .cardsEscolaridade3 {
+    width: 100%;
+    height: 100%;
+    transition: transform 2s;
+    transform-style: preserve-3d;
+    cursor: pointer;
+    position: relative;
+  }
+
+  .card-flipper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 5s;
+    transform-style: preserve-3d;
+  }
+
+  .front,
+  .back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+  }
+
+  .back {
+    transform: rotateY(180deg);
+  }
+
+  #card1:checked ~ .flip-container1 .card-flipper {
+    transform: rotateY(180deg);
+  }
+
+  #card2:checked ~ .flip-container2 .card-flipper {
+    transform: rotateY(180deg);
+  }
+
+  #card3:checked ~ .flip-container3 .card-flipper {
+    transform: rotateY(180deg);
+  }
+
+  .switch {
+    display: none;
+  }
+
+  .card-escolaridade {
+    border: 6px solid $border-card-color;
+    border-radius: 20px;
+    width: 237px;
+    max-width: 237px;
+    height: 332px;
+    will-change: transform;
+    transition: transform 0.5s;
+    transform-style: preserve-3d;
+    position: relative;
+  }
+
+  .flip-container1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 180px;
+    width: 237px;
+    height: 332px;
+    perspective: 1000px;
+    grid-column-start: 2;
+    grid-column-end: 5;
+  }
+
+  .flip-container2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 180px;
+    width: 237px;
+    height: 332px;
+    perspective: 1000px;
+    grid-column-start: 6;
+    grid-column-end: 9;
+  }
+
+  .flip-container3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 180px;
+    width: 237px;
+    height: 332px;
+    perspective: 1000px;
+    grid-column-start: 10;
+    grid-column-end: 13;
+  }
+
+  .front {
+    perspective: 500px;
+  }
+
+  .fundo-curso {
+    background: url("../imagens/fundo-card-cursos.png ");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 237px;
+    max-width: 237px;
+    height: 332px;
+    transform-style: preserve-3d;
+  }
+
+  .fundo-tecnica {
+    background: url("../imagens/fundo-card-etec.png ");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .card-escolaridade:hover {
+    transform: translate(10px) rotateX(0deg) rotateY(30deg);
+  }
+
+  .card-title {
+    position: relative;
+    font-family: attentic;
+    font-size: 24pt;
+    color: $whitecolor;
+
+    top: 50%;
+    right: -5%;
+    transform: translateY(-30deg);
+    transition: transform 0.5s;
+  }
+
+  .card-escolaridade:hover .card-title {
+    transform: translateZ(50px);
+    margin-left: 10px;
+  }
+
+  .card-escolaridade p {
+    font-family: gillSans;
+    font-size: 12pt;
+    color: $whitecolor;
+    margin: 15px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  
+  .page-schools .two-rows{
+    grid-template-rows: 20ch auto;
+  }
+  
+  
+  .cardsEscolaridade1,
+  .cardsEscolaridade2,
+  .cardsEscolaridade3 {
+    width: 100%;
+    height: 100%;
+    transition: transform 2s;
+    transform-style: preserve-3d;
+    cursor: pointer;
+    position: relative;
+  }
+
+  .card-flipper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 5s;
+    transform-style: preserve-3d;
+  }
+
+  .front,
+  .back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+  }
+
+  .back {
+    transform: rotateY(180deg);
+  }
+
+  #card1:checked ~ .flip-container1 .card-flipper {
+    transform: rotateY(180deg);
+  }
+
+  #card2:checked ~ .flip-container2 .card-flipper {
+    transform: rotateY(180deg);
+  }
+
+  #card3:checked ~ .flip-container3 .card-flipper {
+    transform: rotateY(180deg);
+  }
+
+  .switch {
+    display: none;
+  }
+  
+  .card-escolaridade {
+    border: 6px solid $border-card-color;
+    border-radius: 20px;
+    width: 200px;
+    max-width: 200px;
+    height: 300px;
+    will-change: transform;
+    transition: transform 0.5s;
+    transform-style: preserve-3d;
+    position: relative;
+  }
+  
+  .flip-container1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    max-width: 200px;
+    height: 300px;
+    perspective: 1000px;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+  }
+
+  .flip-container2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    max-width: 200px;
+    height: 300px;
+    perspective: 1000px;
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 2;
+  }
+
+  .flip-container3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    max-width: 200px;
+    height: 300px;
+    perspective: 500px;
+    grid-column-start: 5;
+    grid-column-end: 7;
+    grid-row-start: 2;
+  }
+
+  .front {
+    perspective: 500px;
+  }
+
+  .fundo-curso {
+    background: url("../imagens/fundo-card-cursos.png ");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 200px;
+    max-width: 200px;
+    height: 300px;
+    transform-style: preserve-3d;
+  }
+
+  .fundo-tecnica {
+    background: url("../imagens/fundo-card-etec.png ");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .card-escolaridade:hover {
+    transform: translate(10px) rotateX(0deg) rotateY(30deg);
+  }
+
+  .card-title {
+    position: relative;
+    font-family: attentic;
+    font-size: 24pt;
+    color: $whitecolor;
+
+    top: 50%;
+    right: -5%;
+    transform: translateY(-30deg);
+    transition: transform 0.5s;
+  }
+
+  .card-escolaridade:hover .card-title {
+    transform: translateZ(50px);
+    margin-left: 10px;
+  }
+
+  .card-escolaridade p {
+    font-family: gillSans;
+    font-size: 12pt;
+    color: $whitecolor;
+    margin: 15px;
+  }
+}
+
+@media (min-width: 100px) and (max-width: 767px) {
+  .cardsEscolaridade1,
+  .cardsEscolaridade2,
+  .cardsEscolaridade3 {
+    width: 100%;
+    height: 100%;
+    transition: transform 2s;
+    transform-style: preserve-3d;
+    cursor: pointer;
+    position: relative;
+  }
+
+  .card-flipper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 5s;
+    transform-style: preserve-3d;
+  }
+
+  .front,
+  .back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+  }
+
+  .back {
+    transform: rotateY(180deg);
+  }
+
+  #card1:checked ~ .flip-container1 .card-flipper {
+    transform: rotateY(180deg);
+  }
+
+  #card2:checked ~ .flip-container2 .card-flipper {
+    transform: rotateY(180deg);
+  }
+
+  #card3:checked ~ .flip-container3 .card-flipper {
+    transform: rotateY(180deg);
+  }
+
+  .switch {
+    display: none;
+  }
+  .card-escolaridade {
+    border: 6px solid $border-card-color;
+    border-radius: 20px;
+    width: 200px;
+    max-width: 200px;
+    height: 300px;
+    will-change: transform;
+    transition: transform 0.5s;
+    transform-style: preserve-3d;
+    position: relative;
+  }
+  .flip-container1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    max-width: 200px;
+    height: 300px;
+    perspective: 1000px;
+    grid-column-start: 1;
+    grid-column-end: 5;
+    margin: auto;
+  }
+
+  .flip-container2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    max-width: 200px;
+    height: 300px;
+    perspective: 1000px;
+    grid-column-start: 1;
+    grid-column-end: 5;
+    margin: auto;
+  }
+
+  .flip-container3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    max-width: 200px;
+    height: 300px;
+    perspective: 500px;
+    grid-column-start: 1;
+    grid-column-end: 5;
+    margin: auto;
+  }
+
+  .front {
+    perspective: 500px;
+  }
+
+  .fundo-curso {
+    background: url("../imagens/fundo-card-cursos.png ");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 200px;
+    max-width: 200px;
+    height: 332px;
+    transform-style: preserve-3d;
+  }
+
+  .fundo-tecnica {
+    background: url("../imagens/fundo-card-etec.png ");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .card-escolaridade:hover {
+    transform: translate(10px) rotateX(0deg) rotateY(30deg);
+  }
+
+  .card-title {
+    position: relative;
+    font-family: attentic;
+    font-size: 24pt;
+    color: $whitecolor;
+
+    top: 50%;
+    right: -5%;
+    transform: translateY(-30deg);
+    transition: transform 0.5s;
+  }
+
+  .card-escolaridade:hover .card-title {
+    transform: translateZ(50px);
+    margin-left: 10px;
+  }
+
+  .card-escolaridade p {
+    font-family: gillSans;
+    font-size: 12pt;
+    color: $whitecolor;
+    margin: 15px;
+  }
+}
